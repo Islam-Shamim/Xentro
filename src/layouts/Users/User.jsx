@@ -1,22 +1,20 @@
 import PropTypes from 'prop-types';
-import './User.css';
 import { Link, useNavigate } from 'react-router-dom';
 const User = ({ user }) => {
     console.log(user)
     const navigate = useNavigate();
-    const { id, phone, website } = user;
+    const {id, username, email } = user;
 
     const handleDetails = () => {
         navigate(`/user/${id}`)
     }
 
     return (
-        <div>
-            <div className='user'>
-                <h2>ID : {id}</h2>
-                <p>Phone No : {phone}</p>
-                <p>Website : <span>{website}</span></p>
-                <Link to={`/user/${id}`}><button className='btn btn-primary' onClick={handleDetails}>Show details</button></Link>
+        <div className='m-4'>
+            <div className='text-center bg-base-200 p-4 rounded-lg shadow-lg'>
+                <h2>Username : <span className='font-semibold'>{username}</span></h2>
+                <p>Email : {email}</p>
+                <Link to={`/user/${id}`}><button className='btn btn-primary mt-2' onClick={handleDetails}>Show details</button></Link>
             </div>
         </div>
 
