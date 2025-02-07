@@ -1,10 +1,13 @@
 import { Outlet } from "react-router-dom";
+import Navber from "../Navber/Navber";
+import Footer from "../Footer/Footer";
 
 export default function Main() {
-  return (
-    <div>
-        <p>Welcome here.</p>
-      <Outlet></Outlet>
-    </div>
-  )
+    return (
+        <div className="text-center">
+            <Navber></Navber>
+            <Outlet></Outlet>
+            <Footer></Footer>
+        </div>
+    )
 }
