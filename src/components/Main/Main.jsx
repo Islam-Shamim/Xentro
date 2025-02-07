@@ -4,7 +4,7 @@ import Footer from "../Footer/Footer";
 
 export default function Main() {
     return (
-        <div className="text-center">
+        <div>
             <Navber></Navber>
             <Outlet></Outlet>
             <Footer></Footer>
