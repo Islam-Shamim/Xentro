@@ -2,7 +2,7 @@ import './App.css'
 function App() {
   return (
     <>
-      <p>This is Home.</p>
+      <p>This is App.</p>
     </>
   )
 }
