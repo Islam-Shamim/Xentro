@@ -11,7 +11,7 @@ const User = ({ user }) => {
 
     return (
         <div className='m-4'>
-            <div className='text-center bg-base-200 p-4 rounded-lg shadow-lg'>
+            <div className='text-center bg-base-200 p-4 rounded-lg shadow-lg mx-auto'>
                 <h2>Username : <span className='font-semibold'>{username}</span></h2>
                 <p>Email : {email}</p>
                 <Link to={`/user/${id}`}><button className='btn btn-primary mt-2' onClick={handleDetails}>Show details</button></Link>

@@ -1,7 +1,22 @@
+import { Carousel } from "react-responsive-carousel"
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+import img1 from "../../assets/home/d2.jpg"
+import img2 from "../../assets/home/vg1.jpg"
+import img3 from "../../assets/home/vg2.jpg"
 export default function Home() {
-  return (
-    <div className="mx-auto my-4 text-center">
-      <p className="italic text-2xl font-bold">This is home.</p>
-    </div>
-  )
+    return (
+        <Carousel>
+                <div>
+                    <img src={img1} className="w-96" />
+                </div>
+                <div>
+                    <img src={img2} className="w-96" />
+                </div>
+                <div>
+                    <img src={img3} className="w-96" />
+                </div>
+            </Carousel>
+    )
 }
+
+
